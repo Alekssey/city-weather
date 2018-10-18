@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.weather-button{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.show-weather{
+    position: absolute;
+    right: 260px;
+    top: 10px;
+    padding: 10px 10px;
+    font-weight: 900;
+}
+
+.weather-button:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+@media (max-width: 300px){
+    .show-weather{
+        top: 130px;
+        right: 5px;
+    }
+}
