@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../AC/index.js';
+import * as actions from '../redux/action/index.js';
 import ReactMapGL, {NavigationControl} from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 import Weather from './WeatherContainer/index.js';

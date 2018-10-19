@@ -10,17 +10,12 @@ export default class WeatherBox extends Component {
     };
 
     render(){
-        const { dayWeather } = this.props;
-        const { city } = this.props;
+        const { dayWeather, city } = this.props;
 
-        const resultWeather = dayWeather.map((weather) => {
-            const date = weather.date;
-            const temperature = Math.round(weather.temperature - 272);
-            const description = weather.description;
+        const resultWeather = dayWeather.map(({ date, temperature, description }) => {
+            const tmp = Math.round(temperature - 272);
 
-            return (<li key={weather.date}>
-                <span>{date} : <strong>{temperature}C {description}</strong></span>
-            </li>)
+            return <li key={date}><span>{date} : <strong>{tmp}C {description}</strong></span></li>
         });
 
         return (

@@ -1,4 +1,4 @@
-import { GET_CITY_WEATHER_START, GET_CITY_WEATHER_SUCCESS, GET_CITY_WEATHER_ERROR } from "../AC/types";
+import { GET_CITY_WEATHER_START, GET_CITY_WEATHER_SUCCESS, GET_CITY_WEATHER_ERROR } from "../action/types";
 
 const defaultState = {
     loading: false,

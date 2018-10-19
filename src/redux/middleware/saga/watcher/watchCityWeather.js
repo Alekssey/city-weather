@@ -1,4 +1,4 @@
-import { GET_CITY_WEATHER } from "../../../AC/types";
+import { GET_CITY_WEATHER } from "../../../action/types";
 import { takeEvery } from 'redux-saga/effects';
 import { weatherRequest } from '../worker/index.js';
 
